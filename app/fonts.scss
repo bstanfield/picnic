@@ -1,0 +1,130 @@
+// FONT TYPES
+
+$sans-serif: 'Fira Sans', Helvetica, sans-serif;
+$serif: 'Fira Sans', serif;
+$mono: monospace;
+
+// FONT WEIGHTS
+$light: 100;
+$normal: normal;
+$semibold: 500;
+$bold: 700;
+
+//FONT SIZES
+$small: 17px;
+$medium: 20px;
+$large: 30px;
+$x-large: 45px;
+$mobile-header: 30px;
+
+@media screen and (max-width: 450px) {
+    $small: 12px;
+    $medium: 14px;
+    $large: 25px;
+    $x-large: 30px;
+    $header: 25px;
+}
+
+// LINE-HEIGHTS
+$body-line: 30px;
+$smallbody-line: 20px;
+
+// COLORS
+$txt-primary: #333333;
+$picnic-green: rgb(81, 177, 81);
+
+
+ 
+body {
+    font-family: $sans-serif;
+    color: $txt-primary;
+}
+
+h1, h2, h3, h4, p, a, input, span {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+    
+p {
+    font-family: $serif;
+    font-size: $small;
+    line-height: $smallbody-line;
+}
+
+h1 {
+    font-family: $sans-serif;
+    font-size: $large;
+    line-height: 45px;
+    font-weight: $bold;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: $sans-serif;
+    font-size: $medium;
+    font-weight: $bold;
+    color: #333333;
+}
+
+h4 {
+    margin-top: -10px;
+    line-height: $body-line;
+    font-size: $medium;
+    font-family: $serif;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 800px;
+    margin: auto;
+    color: #333333;
+}
+
+    h1.hero {
+        color: white;
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    h4.hero {
+        font-family: $serif;
+        line-height: 35px;
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 22px;
+        letter-spacing: -0.3px;
+    }
+
+a {
+    color: $txt-primary !important;
+    text-decoration: none !important;
+    font-size: $medium;
+}
+
+input {
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+span.code {
+    font-family: $mono;
+    font-weight: $bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #E1E1E8;
+    background-color: #F7F7F9;
+    color: $picnic-green;
+    padding: 2px 5px 2px 5px;
+    border-radius: 2px;
+}
+
+span.code:hover {
+    color: blue;
+    border: 1px solid rgb(191, 191, 199);
+}
+
+hr {
+    border-top: 1px solid #a4a4a4;
+}

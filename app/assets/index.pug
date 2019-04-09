@@ -1,0 +1,73 @@
+extends layout
+
+block content
+
+  .background-green
+    .hero-container
+      .hero-card
+        .hero-text
+          h1.hero.
+            A plant-based
+            alternative for the
+            modern eater.
+          h4.hero. 
+            Plant-based goods delivered to your door, every week, for just $10.
+          form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
+            input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
+            input.button.hero-btn(type="submit" value="Join waitlist")
+      img.hero-img.show(src='images/picnic-hero.png')
+      img.hero-img.hero-img-mobile.hide(src='images/picnic-hero-mobile.png')
+
+  br
+  br
+  .primary-container.centered
+    h1 So what's in the basket? 
+    h4 In every Picnic basket, you'll find an assortment of handcrafted, plant-based baked goods and other tasty treats. Over time, we get to know your eating preferences and tailor your box to you.
+    br
+    
+    .flex
+      .usecase-box
+        <i class="fas fa-truck skipper-icon"></i>
+        h2 Delivered Straight to Your Doorstep
+        p Every week, expect a new Picnic basket delivered directly to you.
+
+      .usecase-box
+        <i class="fas fa-air-freshener skipper-icon"></i>
+        h2 Every Basket Guaranteed Fresh
+        p At Picnic, all of our snacks and meals are handmade just before we send them off to your doorstep.
+
+      .usecase-box
+        <i class="fas fa-balance-scale skipper-icon"></i>
+        h2 Carefully calibrated health and nutrients
+        p We balance protein, carbohydrate, and fat intake to ensure you're getting all of the nutrients you need.
+
+  //- .primary-container
+  //-   .flex
+  //-     .left-img
+  
+  //-     .right-text      
+  //-       h1 Committed to your health, and the planet's
+  //-       h4 Meat is tasty, but it's a big contributor to climate change. At Picnic, our mission is to help eaters embrace a plant-based diet that doesn't suck.
+  //-       br
+  
+  br
+  br
+  br
+  .primary-container.centered.mobile-centered
+    h1 Get Started
+    h4 Join our waitlist to receive your first Picnic basket and stay up-to-date on our progress.
+
+    br
+    br
+    form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
+      input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
+      input.button.button-nav.fatty(type="submit" value="Join waitlist")
+
+
+
+
+
+
+          
+
+ 

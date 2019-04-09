@@ -1,0 +1,59 @@
+extends layout
+
+block content
+    .primary-container
+        .container
+           .post
+                h1 Frequently Asked Questions
+                h4.
+                    When we talk with customers we get a lot of questions around dietary constraints, nutrition, price, and our plan to save the planet. 🌎
+
+                h4. 
+                    So, we've decided to compile a rolling list of frequently asked questions.
+
+                +question({
+                    q: 'Is Picnic a snack box company?',
+                    a: 'The short answer: no. Core to our mission is the desire to make fundamental change in how humans approach their diet, and the first step in that process is introducing people to plant-based foods that are exciting, filling, nutritious, and not just a snack.'
+                })
+
+                +question({
+                    q: 'How expensive are Picnic baskets?',
+                    a: `For now, all of our baskets are priced at $10. However, we're still experimenting with what we want our customers to eat and also learn what they enjoy most, so this might change in the near future.`
+                })
+
+                +question({
+                    q: 'What happens when I join the waitlist?',
+                    a: `We're still a very small operation right now. Joining the waitlist gets you in line for your first basket, but we can't get guarantee a shipping date. Joining the list also means you'll stay up to date on any messages we're sending out to customers.`
+                })
+
+                +question({
+                    hash: 'subscription',
+                    q: '⭐ What does it mean to subscribe to Picnic?',
+                    a: `A Picnic subscription guarantees you a box of plant-based protein-packed foods every week for the price of $10/week or $35/month. You get to see a menu a couple of days ahead of time. Also we're still in beta so you're not guaranteed a basket every week — if we can't get a basket to you for some reason, you get a full refund.`
+                })
+
+                form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
+                    input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
+                    input.button.button-nav.fatty(type="submit" value="Join waitlist")
+
+                br
+                br
+
+                +question({
+                    q: `What happens if I don't want a basket delivered one week?`,
+                    a: `A subscription is easy to pause a couple of days ahead of your delivery. Just message us on Intercom (bottom right corner)! If you're pausing your subscription on the day of your order, the pause will go into effect for your next box.`
+                })
+
+                +question({
+                    q: `What's in a box?`,
+                    a: `You get roughly 16 goodies, split up into 4 types of snacks. That's around five protein bars worth of food in a box. Our recipes change from week to week, so some examples of food we've delivered in the past are: sunflower seed basil cookies, chia seed almond butter rolls, tomato lentil fritters, and roasted carrots with aioli.`
+                })
+
+                +question({
+                    q: `How should I use the box?`,
+                    a: `However you want to! We've had folks tell us it's a perfect grab and go breakfast, midday snack, or sos-i'm-tired-of-frozen-food dinner. It's up to you how you fit your basket into your day — we're excited to hear how it works for you!
+                    
+                    And make sure to refrigerate!`
+                })
+
+

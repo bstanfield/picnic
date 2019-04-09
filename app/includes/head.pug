@@ -1,0 +1,65 @@
+head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width")
+
+  //- AdWords
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-799084191"></script>
+  
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-799084191');
+
+  //- FontAwesome
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  //- CSS Compile & Google Fonts
+  link(rel="stylesheet" href="/app.css")
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
+  
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-121010767-1');
+
+  //- INTERCOM
+  script.
+      window.intercomSettings = {
+        app_id: 'd2qx1f2z'
+      };
+
+  script.
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d2qx1f2z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+
+  //- OpenGraph Properties
+  meta(property="og:type" content="website")
+  meta(property="og:url" content="https://www.choosepicnic.com")
+  meta(property="og:site_name" content="choosepicnic.com")
+  meta(property="og:title" content="Picnic! 🧡")
+  meta(property="og:description" content="Plant-based goods delivered to your door, every week, for just $10.")
+  meta(property="og:image" content="https://i.imgur.com/Ug2GMO9.png")
+  
+  //- Twitter Card
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="choosepicnic.com" />
+  <meta name="twitter:title" value="Picnic! 🧡" />
+  <meta name="twitter:description" value="Plant-based goods delivered to your door, every week, for just $10." />
+  <meta name="twitter:image" content="https://i.imgur.com/Ug2GMO9.png" />
+  <meta name="twitter:url" value="https://www.choosepicnic.com/" />
+  
+  //- Site Title
+  title Picnic • Plant-based food, delivered.
+
+  //- Favicon
+  <link rel="icon" href="../images/picnic-ico.png" />
+
+  //- Compiled Scripts
+  script(src="/vendor.js")
+  script(src="/app.js")
+  script(require('initialize'))
