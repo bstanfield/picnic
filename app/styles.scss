@@ -73,23 +73,19 @@ a .banner:hover {
   width: 100%;
   height: auto;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   z-index: 999;
+  padding-bottom: 3px;
 }
 
 .nav-items {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 8px;
 }
-
-  .top {
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-    background-color: white !important;
-  }
 
   .demo-link {
     font-weight: $semibold;
@@ -103,9 +99,23 @@ a .banner:hover {
   float: right;
 }
 
+  .nav-menu a:hover {
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .nav-menu-home a {
+    color: white !important;
+    opacity: .8;
+  }
+
+    .nav-menu-home a:hover {
+      color: white !important;
+      opacity: 1;
+    }
+
 .nav-link {
   padding-right: 30px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
   .nav-link:hover {
@@ -115,6 +125,7 @@ a .banner:hover {
 .nav-logo {
   width: 150px;
   height: 100%;
+  margin-top: 0ppx;
   display: inline-block;
 }
 
@@ -129,15 +140,14 @@ a .banner:hover {
 .primary-container {
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
   .hero-container {
     width: 90%;
     margin: auto;
-    height: 90vh;
-    max-width: 1300px;
-    padding-top: 20px;
+    height: 85vh;
+    max-width: 1200px;
     position: relative;
   }
 
@@ -186,7 +196,13 @@ a .banner:hover {
   }
 
 h4.hero {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+p.hero {
+  position: absolute;
+  bottom: 10px;
+  color: rgb(33, 123, 33);
 }
 
   h4.caps {
@@ -219,20 +235,20 @@ h2 span {
 
 img.hero-img {
   position: absolute;
-  height: 100%;
-  max-height: 75vh;
+  width: 500px;
+  height: auto;
   z-index: 1;
-  bottom: 0;
-  right: 0;
-  margin-right: -200px;
+  bottom: 30px;
+  right: 30px;
 }
 
 img.hero-img-mobile {
   height: auto;
-  width: 400px;
+  width: 600px;
   max-width: 100%;
   left: 0;
   right: 0;
+  bottom: -380px;
   margin: auto;
 }
 
@@ -266,16 +282,29 @@ img.hero-img-mobile {
   .button-nav {
     padding: 6px 12px;
     transition: all 0.3s ease;
+    background-color: #fb9e00;
   }
 
-  .button-nav:hover {
-    background-color: rgb(68, 196, 68);
+    .button-nav:hover {
+      background-color: #fcb436;
+    }
+
+  .button-nav-green {
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+    background-color: $picnic-green;
   }
+
+    .button-nav-green:hover {
+      background-color: rgb(76, 204, 76);
+    }
+
+
 
   .hero-btn {
     background-color: #fb9e00;
     padding: 12px 18px;
-    color: #744a01 !important;
+    color: white;
     font-size: $small;
   }
 
@@ -353,6 +382,12 @@ img.hero-img-mobile {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgb(245, 245, 245) 0px -1px 0px;
   transition: .5s ease all;
+}
+
+.team-pic {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgb(245, 245, 245) 0px -1px 0px;
+  margin: 10px 0px 50px 0px;
 }
 
   .demo-box img {
@@ -594,8 +629,8 @@ img.hero-img-mobile {
   }
 
 .medium {
-  width: 100%;
-  max-width: 500px;
+  width: auto;
+  max-height: 50px;
   margin: auto;
 }
 
@@ -800,6 +835,7 @@ h4.white {
     .input-nav {
       width: 150px;
       margin-right: 5px;
+      opacity: .7;
     }
 
     .input-box:hover {
@@ -809,6 +845,7 @@ h4.white {
     .input-nav:focus {
       width: 200px;
       border: 1px solid rgb(182, 182, 182);
+      opacity: 1;
     }
 
     .input-primary {

@@ -1,10 +1,10 @@
-.navbar(style='border-bottom: 2px solid #f1f1f1;').top
+.navbar.top
     .nav-items
         .nav-burger
             span.open(id="open" onclick="openNav()") &#9776
         a.nav-logo(href='/')
-            img.medium(src='images/picnic-logo.png' style='opacity: .8;')
-        .nav-menu
+            img.medium(src='images/picnic-logo-white.png' style='opacity: .8;')
+        .nav-menu.nav-menu-home
             //- a.nav-link(href="index.html") Home
             a.nav-link(href='about.html') About us
             a.nav-link(href='blog.html') Blog
@@ -12,4 +12,4 @@
             
             form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
                 input.input-box.input-nav(type="email" placeholder="Enter email" name="email" required)
-                input#email_submit.button.button-nav-green(type="submit" value="Join waitlist")
+                input#email_submit.button.button-nav(type="submit" value="Join waitlist")

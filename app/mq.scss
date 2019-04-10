@@ -156,8 +156,12 @@
     }
 
     h1.hero {
-        font-size: 45px !important;
-        line-height: 55px !important;
+        font-size: 40px !important;
+        line-height: 48px !important;
+    }
+
+    h4.hero {
+        margin-bottom: 20px;
     }
 
 
@@ -263,11 +267,6 @@
         border-bottom: none;
     }
 
-    .navbar {
-        background-color: white;
-        border-bottom: 2px solid #bbbbbb;
-    }
-
     form input {
         display: block;
         margin-bottom: 10px;
@@ -343,5 +342,19 @@
 
     .hero-text form {
         width: 80%;
+    }
+
+    h4.hero {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+
+    form {
+        margin-top: 10px;
+        max-width: 240px !important;
+    }
+
+    img.hero-img-mobile {
+        bottom: -180px;
     }
 }

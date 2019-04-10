@@ -1,4 +1,4 @@
-extends layout
+extends layout-home
 
 block content
 
@@ -7,39 +7,38 @@ block content
       .hero-card
         .hero-text
           h1.hero.
-            A plant-based
-            alternative for the
-            modern eater.
+            Healthy meals, free delivery.
           h4.hero. 
-            Plant-based goods delivered to your door, every week, for just $10.
+            Get a fresh and delicious meal delivered to your door for as little as  $8.00, free shipping guaranteed. <i style="color: darkgreen; opacity: .5; font-size: 20px;" class="fas fa-check-circle"></i>
           form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
-            input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
-            input.button.hero-btn(type="submit" value="Join waitlist")
-      img.hero-img.show(src='images/picnic-hero.png')
-      img.hero-img.hero-img-mobile.hide(src='images/picnic-hero-mobile.png')
+            input.button.hero-btn(type="submit" value="Order now!*")
+      img.hero-img.show(src='images/picnic-plate1-shadow.png')
+      img.hero-img.hero-img-mobile.hide(src='images/picnic-plate1-shadow.png')
+
+      p.hero *Only available in the Los Angeles area.
 
   br
   br
   .primary-container.centered
-    h1 So what's in the basket? 
-    h4 In every Picnic basket, you'll find an assortment of handcrafted, plant-based baked goods and other tasty treats. Over time, we get to know your eating preferences and tailor your box to you.
+    h1 Fresh food with a tiny footprint
+    h4 We exclusively choose ingredients that are sustainably grown and have a low carbon footprint—that's why you <i>won't find any meat on our menu.</i>
     br
     
     .flex
       .usecase-box
-        <i class="fas fa-truck skipper-icon"></i>
-        h2 Delivered Straight to Your Doorstep
-        p Every week, expect a new Picnic basket delivered directly to you.
+        <i class="fas fa-heart skipper-icon"></i>
+        h2 Healthy, Without Compromise
+        p Our food is healthy <i>and</i> delicious. Our meals are seasoned with fresh herbs bring out the natural flavors of our ingredients.
 
       .usecase-box
-        <i class="fas fa-air-freshener skipper-icon"></i>
-        h2 Every Basket Guaranteed Fresh
-        p At Picnic, all of our snacks and meals are handmade just before we send them off to your doorstep.
+        <i class="fas fa-tree skipper-icon"></i>
+        h2 A Small, Seasonal Menu
+        p Our menu is inspired by the ingredients we find at farmer's markets and from local growers.
 
       .usecase-box
-        <i class="fas fa-balance-scale skipper-icon"></i>
-        h2 Carefully calibrated health and nutrients
-        p We balance protein, carbohydrate, and fat intake to ensure you're getting all of the nutrients you need.
+        <i class="fas fa-concierge-bell skipper-icon"></i>
+        h2 Delivered Piping Hot
+        p Our meals are designed to look and taste fresh when you pick it up at the door.
 
   //- .primary-container
   //-   .flex
@@ -54,14 +53,13 @@ block content
   br
   br
   .primary-container.centered.mobile-centered
-    h1 Get Started
-    h4 Join our waitlist to receive your first Picnic basket and stay up-to-date on our progress.
+    h1 Place your order now
+    h4 If it's during operating hours, simply fill out our online form to place your order.
 
     br
     br
     form(action="https://picnic385059.typeform.com/to/Uo0dHl" method="GET" target="_blank")
-      input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
-      input.button.button-nav.fatty(type="submit" value="Join waitlist")
+      input.button.button-nav.fatty(type="submit" value="Order now!")
 
 
 
