@@ -3,11 +3,12 @@
 
 $bg-color: white;
 
+html,
 body {
   margin: 0;
   padding: 0;
   background-color: $bg-color;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a .banner {
@@ -146,7 +147,7 @@ a .banner:hover {
   .hero-container {
     width: 90%;
     margin: auto;
-    height: 85vh;
+    height: 600px;
     max-width: 1200px;
     position: relative;
   }
@@ -202,7 +203,7 @@ h4.hero {
 p.hero {
   position: absolute;
   bottom: 10px;
-  color: rgb(33, 123, 33);
+  color: rgb(23, 104, 23);
 }
 
   h4.caps {
@@ -233,6 +234,10 @@ h2 span {
 
 // END FANCY SHIT
 
+p a {
+  font-size: inherit !important;
+}
+
 img.hero-img {
   position: absolute;
   width: 500px;
@@ -240,16 +245,6 @@ img.hero-img {
   z-index: 1;
   bottom: 30px;
   right: 30px;
-}
-
-img.hero-img-mobile {
-  height: auto;
-  width: 600px;
-  max-width: 100%;
-  left: 0;
-  right: 0;
-  bottom: -380px;
-  margin: auto;
 }
 
 .hover:hover {
@@ -668,6 +663,22 @@ img.hero-img-mobile {
   width: 180px;
 }
 
+.stretch-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.stretch {
+  width: 100%;
+  height: 400px;
+
+  background-image: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -50px;
+}
+
 .beta-img {
   width: 200px;
   margin-right: 80px;
@@ -806,6 +817,10 @@ h4.white {
   .form-group {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  input.hero-btn {
+    font-size: 18px !important;
   }
 
   .input-box {

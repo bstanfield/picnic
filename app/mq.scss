@@ -91,6 +91,17 @@
 }
 
 @media screen and (max-width: 850px) {
+    .dish {
+        max-width: 500px !important;
+        margin: auto !important;
+        margin-bottom: 30px !important;
+    }
+
+        .dish img {
+            width: 100% !important;
+            margin: auto;
+        }
+    
     .show {
         display: none !important;
     }
@@ -116,7 +127,14 @@
     }
     
     img.hero-img {
-        display:none;
+        bottom: -300px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    p.hero {
+        display: none;
     }
 
     .hero-text {
@@ -171,6 +189,36 @@
 }
 
 @media screen and (max-width: 650px) {
+    .flex {
+        display: block;
+    }
+    
+    .stretch {
+        width: 120%;
+        margin-left: -8%;
+        height: 250px;
+        margin-top: -5px;
+
+    }
+    
+    .dish {
+        max-width: 95% !important;
+        padding: 0 !important;
+        margin: 0px 0px 50px 0px !important;
+    }
+
+        .dish img {
+            max-width: 120% !important;
+            width: 120% !important;
+            margin-left: -8% !important;
+            margin-bottom: 20px !important;
+        }
+    
+    img.hero-img {
+        width: 450px;
+        bottom: -300px;
+    }
+    
     .hero-text {
         text-align: center !important;
     }
@@ -201,10 +249,6 @@
     
     .button-nav {
         margin-bottom: 20px;
-    }
-    
-    .hero-image {
-        display: none;
     }
 
     .hero-card {
@@ -286,7 +330,7 @@
     }
 
     .flex {
-        display: block; 
+        display: block !important; 
     }
 
     .blog-container .flex {
@@ -305,6 +349,10 @@
 
 //MOBILE QUERIES
 @media screen and (max-width: 415px) {
+    img.hero-img {
+        width: 100%;
+        bottom: -205px;
+    }
 
     h1 {
         line-height: 45px !important;
@@ -337,7 +385,11 @@
     }
 
     .hero-container {
-        height: 700px;
+        height: 640px;
+    }
+
+    p.hero {
+        display: none;
     }
 
     .hero-text form {
@@ -352,9 +404,5 @@
     form {
         margin-top: 10px;
         max-width: 240px !important;
-    }
-
-    img.hero-img-mobile {
-        bottom: -180px;
     }
 }

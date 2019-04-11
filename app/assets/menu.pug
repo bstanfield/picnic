@@ -1,0 +1,91 @@
+extends layout
+
+block content
+    style.
+        .dish p {
+            line-height: 28px;
+            margin-top: 10px;
+        }
+
+        .dish h4 {
+            margin-top: 5px;
+        }
+
+        .flex {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(380px, 1fr));
+        }
+
+        .dish {
+            margin: 10px;
+            width: 100%;
+            max-width: 380px;
+            margin: 10px;
+            padding: 0px 10px;
+            position: relative;
+        }
+
+            .dish img {
+                max-width: 360px;
+                margin-bottom: 20px;
+            }
+
+        p i {
+            font-size: 15px;
+            margin-right: 5px;
+            opacity: .5;
+        }
+
+        .center {
+            margin-top: 50px;
+            max-width: 100%;
+            width: 250px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .price {
+            width: fit-content;
+            background-color: rgb(81, 177, 81);
+            padding: 0px 10px;
+            border-radius: 3px;
+            color: white;
+        }
+
+        .center .button {
+            width: 100%;
+        }
+
+    .primary-container
+        br
+        br
+        br
+        br
+        br
+        br
+        .stretch-container
+            .stretch(style="background-image: url('../images/picnic-plate-collection.JPG')")
+        .container
+           .post
+                h1 🍏 The Menu  
+                h4.
+                    We're excited to share our menu with you! We have 3 plant-based dishes offered tonight, each made with fresh, seasonal ingredients. After <a class="typeform-share" href="https://choosepicnic.typeform.com/to/XAt6Rr" data-mode="popup" data-submit-close-delay="5" target="_blank">ordering</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> you'll receive a text message from our team. We'll have the food to you within an hour.
+
+                h4 Picnic guarantees:
+                
+                .guarantees(style='margin: -10px 0px 30px 30px;')
+                    h4 ✅ Delivery in under an hour
+                    h4 ✅ 100% plant-based recipes
+                    h4 ✅ No added sugars
+
+                h2 Menu Items (April 11)
+            
+                .flex
+                    +menu(menus.menu1)
+
+                .center
+                    +typeform()
+                    p #[+icon('far fa-credit-card')] All payments are securely processed with <a target="_blank" href="https://www.stripe.com">Stripe</a>.
+
+
+

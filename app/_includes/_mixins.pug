@@ -53,3 +53,20 @@ mixin question(qa)
         span(id=qa.hash)  
     h2!=qa.q
     h4!= qa.a
+
+mixin menu(week)
+    each item in week
+        .dish
+            img(src=item.src)
+            h4 <strong>!{item.name}</strong>
+            p!=item.sub
+            if item.price
+                .price
+                    p $#{item.price}
+
+mixin typeform()
+    <a class="typeform-share button" href="https://choosepicnic.typeform.com/to/XAt6Rr" data-mode="popup" style="color: white !important; text-decoration: none !important; font-size: 18px; padding: 10px 15px !important;" data-submit-close-delay="5">Order now!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+mixin icon(c)
+    i(class=c)
+

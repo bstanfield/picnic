@@ -1,0 +1,19 @@
+{
+    "menu1": [
+        {
+            "src": "../images/food/IMG_8122.JPG",
+            "name": "California Congee",
+            "sub": "A hearty rice porridge topped with Elote-spiced corn, caramelized mushrooms, fresh asparagus, and green onion."
+        },
+        {
+            "src": "../images/food/IMG_8122.JPG",
+            "name": "Fennel on Sunflower Pesto Peas",
+            "sub": "Caramelized Fennel atop a bed of peas tossed in a sunflower-seed pesto sauce. Served with a dollop of fennel purée and fresh toasted sunflower seeds."
+        },
+        {
+            "src": "../images/food/IMG_8122.JPG",
+            "name": "Cauliflower Cassoulet",
+            "sub": "Oven Seared Cauliflower atop a comforting stew made of caramelized onion and white beans simmered in our rich vegetable broth. Served with arugula wilted in olive oil."
+        }
+    ]
+}
