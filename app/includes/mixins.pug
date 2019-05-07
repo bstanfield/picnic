@@ -70,3 +70,21 @@ mixin typeform()
 mixin icon(c)
     i(class=c)
 
+mixin navItems()
+    a.nav-link(href='about.html') About us
+    a.nav-link(href='blog.html') Blog
+    a.nav-link.mobile-hide(href='menu.html') Menu
+    a.nav-link.demo-link(href='https://picnic385059.typeform.com/to/jv1HLB') Join waitlist
+
+    form(action="https://picnic385059.typeform.com/to/jv1HLB" method="GET" target="_blank")
+        input#email_submit.button.button-nav(type="submit" value=btnTxt)
+
+// TEMPORARY
+mixin spacer()
+    br
+    br
+    br
+    br
+    br
+    br
+

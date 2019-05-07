@@ -10,10 +10,10 @@ exports.files = {
     joinTo: 'app.css',
       order: {
         before: [
-          'app/bootstrap.css',
-          'app/styles.scss',
-          'app/mq.scss',
-          'app/fonts.scss',
+          'app/styles/bootstrap.css',
+          'app/styles/styles.scss',
+          'app/styles/mq.scss',
+          'app/styles/fonts.scss',
         ]
       }
   },

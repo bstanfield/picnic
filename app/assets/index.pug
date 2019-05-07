@@ -1,23 +1,6 @@
 extends layout-home
 
 block content
-
-  script.
-    var $ = require('jquery');
-
-    $(document).ready(() => {
-      const plates = ['images/picnic-plate1-shadow.png', 'images/picnic-plate2-shadow.png', 'images/picnic-plate3-shadow.png']
-      setInterval(function() {
-        if ($('.hero-img').attr('src') == plates[0]) {
-          $('.hero-img').attr("src", plates[1]);
-        } else if ($('.hero-img').attr('src') == plates[1]) {
-          $('.hero-img').attr("src", plates[2]);
-        } else {
-          $('.hero-img').attr("src", plates[0]);
-        }
-      }, 8000);
-    });
-
   .background-green
     .hero-container
       .hero-card
@@ -25,10 +8,11 @@ block content
           h1.hero.
             Healthy meals, free delivery.
           h4.hero. 
-            Get a fresh and delicious meal delivered to your door for as little as  $8.00, free delivery guaranteed. <i style="color: darkgreen; opacity: .5; font-size: 20px;" class="fas fa-check-circle"></i>
+            Get a fresh and delicious meal delivered to your door for as little as  $8.00, free delivery guaranteed. #[i(style="color: darkgreen; opacity: .5; font-size: 20px;" class="fas fa-check-circle")]
+          
           form(action="https://picnic385059.typeform.com/to/jv1HLB" method="GET" target="_blank")
             input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
-            input.button.hero-btn(type="submit" value="Join waitlist")
+            input.button.hero-btn(type="submit" value=btnTxt)
       .img-group
         img.hero-img(src='images/picnic-plate1-shadow.png')
         
@@ -78,7 +62,7 @@ block content
     br
     br
     form(action="https://picnic385059.typeform.com/to/jv1HLB" method="GET" target="_blank")
-      input.button.button-nav.fatty(type="submit" value="Join waitlist")
+      input.button.button-nav.fatty(type="submit" value=btnTxt)
 
 
 

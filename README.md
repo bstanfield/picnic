@@ -9,12 +9,20 @@ Clone this repo manually or use `brunch new dir -s`
     * [Brunch](http://brunch.io): `npm install -g brunch`
     * Brunch plugins and app dependencies: `npm install`
 * Run:
-    * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `npm run build` — builds minified project for production
+	* `brunch build` - compiles all files into /public folder
+	* `brunch watch --server` - opens live reload server on port 3333
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
+* Extras:
+	* `.pug` -> `.html` - See documentation for how to use the
+	  [Pug](https://pugjs.org/api/getting-started.html)
+	  templating language.
+		* Use **mixins** to create reusable components
+		* Super-simple syntax (h1, .class, etc.)
+	* `.scss` - Set variables in css 
+
 
 ## ES-next
 
